@@ -1,4 +1,4 @@
-module.exports = `query($repo: String!, $owner: String!, $branch: String!) {
+export const query = `query($repo: String!, $owner: String!, $branch: String!) {
   repository(name: $repo, owner: $owner) {
     ref(qualifiedName: $branch) {
       target {
